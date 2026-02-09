@@ -1,5 +1,7 @@
 #NeutronAI
-- VS Code için Prettier ve ESLint eklentileri kuruldu.
+Homebrew kuruldu
+
+VS Code için Prettier ve ESLint eklentileri kuruldu.
 
 
 

@@ -1,0 +1,16 @@
+.logo {
+    float: right;
+    width: 300px
+}
+h1 {
+    color: darkslateblue;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+h2 {
+    color: rgb(85, 152, 191);
+    font-size: 30px;
+}
+h3 {
+    color: darkslategray;
+}

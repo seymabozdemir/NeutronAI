@@ -1,0 +1,110 @@
+[
+    {
+        "id":1,
+        "name":"Elif Yaren Şakar",
+        "team":"GUI",
+        "isFavorite":false
+    },
+    {
+        "id":2,
+        "name":"Bilge Demirel",
+        "team":"GUI",
+        "isFavorite":false
+    },
+    {
+        "id":3,
+        "name":"Şeyma Bozdemir",
+        "team":"GUI",
+        "isFavorite":false
+    },
+    {
+        "id":4,
+        "name":"Zübeyde Tokşen",
+        "team":"ROS",
+        "isFavorite":false
+    },
+    {
+        "id":5,
+        "name":"Betül Yalçın",
+        "team":"ROS",
+        "isFavorite":false
+    },
+    {
+        "id":6,
+        "name":"Hasan Şekerci",
+        "team":"ROS",
+        "isFavorite":false
+    },
+    {
+        "id":7,
+        "name":"Bilge Demirel",
+        "team":"ROS",
+        "isFavorite":false
+    },
+    {
+        "id":8,
+        "name":"Sefa Ekiz",
+        "team":"ROS",
+        "isFavorite":false
+    },
+    {
+        "id":9,
+        "name":"İlay Eylül",
+        "team":"Elektronik",
+        "isFavorite":false
+    },
+    {
+        "id":10,
+        "name":"Kadir Atakan Arslan",
+        "team":"Elektronik",
+        "isFavorite":false
+    },
+    {
+        "id":11,
+        "name":"Sude Naz",
+        "team":"Elektronik",
+        "isFavorite":false
+    },
+    {
+        "id":12,
+        "name":"İremnaz Deveci",
+        "team":"Sensör/Görüntü İşleme",
+        "isFavorite":false
+    },
+    {
+        "id":13,
+        "name":"Elifsu Sındırgılı",
+        "team":"Sensör/Görüntü İşleme",
+        "isFavorite":false
+    },
+    {
+        "id":14,
+        "name":"Nour Margi",
+        "team":"Sensör/Görüntü İşleme",
+        "isFavorite":false
+    },
+    {
+        "id":15,
+        "name":"Sinan",
+        "team":"Sensör/Görüntü İşleme",
+        "isFavorite":false
+    },
+    {
+        "id":16,
+        "name":"Umut Vedat",
+        "team":"Sensör/Görüntü İşleme",
+        "isFavorite":false
+    },
+    {
+        "id":17,
+        "name":"Yunus Emre Öztolüt",
+        "team":"Mekanik",
+        "isFavorite":false
+    },
+    {
+        "id":18,
+        "name":"Erdem Terzi",
+        "team":"Mekanik",
+        "isFavorite":false
+    }
+]

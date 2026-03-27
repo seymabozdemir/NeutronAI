@@ -1,0 +1,40 @@
+
+<!--"!+Tab":Emmet Abbreviation(Emmet kısaltması)Hatasız HTML5 İskeleri oluşturur.Buna "Boilerplate(hazır kalıp)"denir.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeutronAI Takım Üyeleri</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--Bu satırla Bootstrep kütüphanesini koda çağırdık.-->
+
+</head>
+<body>
+    <div class="container mt-5 text-center"><!--İçeriği sayfanın ortasına topladık-->
+        <!--Tepeden(Margin Top) 5 birim boşluk bıraktık.-->
+  <h2>NeutronAI Ekibi</h2>
+  <hr><!--"Horizontal Rule":başlığın altına boydan boya ince bir çizgi çeker.-->
+</div>
+<div class="container text-center mb-4">
+    <button class="btn btn-primary m-1" onclick="filtrele('Hepsi')">Hepsi</button>
+    
+    <button class="btn btn-outline-primary m-1" onclick="filtrele('GUI')">GUI</button>
+    <button class="btn btn-outline-primary m-1" onclick="filtrele('ROS')">ROS</button>
+    <button class="btn btn-outline-primary m-1" onclick="filtrele('Elektronik')">Elektronik</button>
+    <button class="btn btn-outline-primary m-1" onclick="filtrele('Sensör/Görüntü İşleme')">Sensör/Görüntü İşleme</button>
+    <button class="btn btn-outline-primary m-1" onclick="filtrele('Mekanik')">Mekanik</button>
+    <button class="btn btn-danger m-1" onclick="favorileriGoster()">Favorilerim</button>
+    <div class="container mb-4">
+    <input type="text" id="aramaKutusu" class="form-control w-50 mx-auto" placeholder="İsimle ara..." onkeyup="isimleAra()">
+</div>
+</div>
+
+<!--id'de JS tanısın diye özel bir isim verdik.-->
+<div id="member-row" class="row g-4"> </div>
+<!--row:içine gelecek kartları yan yana diz.-->
+<!--g4:"Gap(boşluk)" koyar kartlar arasına.-->
+    
+<script src="script.js"></script><!--JS'deki kodları çekiyoruz.-->
+</body>
+</html>

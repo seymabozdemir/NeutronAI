@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takım Web Sitesi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGASYON -->
+    <nav>
+        <ul>
+            <li><a href="#home">Anasayfa</a></li>
+            <li><a href="#basarilarimiz">Başarılarımız</a></li>
+            <li><a href="#takımlar">Takımlarımız</a></li>
+            <li><a href="#uyeler">Bizi Tanıyın</a></li>
+            <li><a href="#sponsorluk">Sponsorluk</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- ANASAYFA (HERO) -->
+    <header id="home">
+        <div class="hero">
+            <img src="logo-transparent.png" alt="Takım Logosu" class="site-logo">
+            <h1 class="hero-slogan">TEKNOLOJİYLE HAYAT BULAN FİKİRLER</h1>
+            <div class="scroll-hint">
+                <span>KEŞFET</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- BAŞARILAR -->
+    <section id="basarilarimiz">
+            <h2 class="section-main-title">BAŞARILARIMIZ</h2>
+
+            <div class="achievements-container">
+
+                <div class="achievements-text">
+                        <p>
+                            <strong style="font-size: 1.3rem; color: #B4AEE8; display: block; margin-bottom: 8px; letter-spacing: 1px;">
+                                TEKNOFEST 2025 TÜRKİYE 3.'SÜ!
+                            </strong>
+                            NeutronAI takımımız, Karadeniz Teknik Üniversitesi bünyesinde geliştirdiği **yapay zekâ destekli özgün nükleer güvenlik sistemi** ile ulusal düzeyde büyük bir başarıya imza attı. 
+                            <br><br>
+                            Gerçek dünya sorunlarına akıllı çözümler üreten ekibimiz, bu prestijli dereceyle teknolojik yetkinliğini tescilledi. İnovasyon ve Ar-Ge vizyonumuzla, geleceğin teknolojilerine yön vermeye hız kesmeden devam ediyoruz.
+                        </p>
+                  </div>
+
+                <div class="achievements-slider">
+                    <div class="a-slider-viewport">
+                            <div class="a-slider-track">
+                                <img src="teknofest-odul.jpg" alt="Teknofest 2025">
+                                <img src="takim-fotografi.jpg" alt="NeutronAI Takımı">
+                            </div>
+                        </div>
+                        <button class="a-nav-btn a-prev">&lt;</button>
+                        <button class="a-nav-btn a-next">&gt;</button>
+                        <div class="a-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    
+                </div></section>
+
+        <!-- TAKIMLAR VE SLIDER -->
+        <section id="takımlar">
+            <h2 class="section-main-title">Takımlarımız Ve Çalışma Alanları</h2>
+            
+            <div class="team-info">
+                <h3>Sanayide Dijital Teknolojiler</h3>
+                <p>
+                    Takımımız, sanayide dijitalleşme fırsatlarını değerlendirmek için otonom yük taşıma teknolojileri geliştiriyor.
+                    Fabrika ve depo içi lojistikte görev alacak, belirli yükleri güvenli ve akıllı şekilde taşıyan sistemler tasarlıyoruz.
+                    Bu çözümlerle sektördeki boşluğu dolduruyor, verimliliği artırıyor ve süreç  güvenliğini güçlendiriyoruz.
+                    Ayrıca farklı üretim ve depolama ortamlarına uyarlanabilir yapısıyla sanayide dijitalleşmeyi destekliyoruz.
+                    Amacımız, yalnızca bugünün ihtiyaçlarını karşılamak değil, geleceğin akıllı ve otonom sanayi sistemlerine öncülük etmek.
+                </p>
+            </div>
+
+            <div class="team-info">
+                <h3>Nükleer Enerji Teknolojileri Tasarımı</h3>
+                <p>
+                    Projenin temel amacı, nükleer tesisler veya radyasyon sızıntısı gibi insan sağlığı için yüksek risk taşıyan ortamlarda,
+                    insan müdahalesini en aza indirerek güvenli veri toplanmasını sağlayan mobil bir robotik platform geliştirmektir.
+                    Sistem, tehlikeli bölgelerden anlık radyasyon ve çevre verilerini toplayarak uzaktan izlenebilir ve analiz edilebilir bir altyapı kurmayı hedeflemektedir.
+                </p>
+            </div>
+        </section>
+
+        <section id="uyeler">
+            <h2 class="section-main-title">Bizi Tanıyın</h2>
+            <div class="team-block">
+                <div class="slider-container">
+                    <button class="nav-btn prev" id="prev1">&#10094;</button>
+                    <div class="slider-viewport">
+                        <div id="takim-listesi" class="slider-track"></div>
+                    </div>
+                    <button class="nav-btn next" id="next1">&#10095;</button>
+                </div>
+            </div>
+        </section>
+            
+        
+
+        <!-- SPONSORLUK -->
+        <section id="sponsorluk">
+            <h2 class="section-main-title">SPONSORLUK</h2>
+            <div class="team-info">
+                <h3>Neden Sponsor Olmalısınız?</h3>
+                <p class="content-text">
+                    Sponsorluk desteği, projemizin test ve geliştirme süreçlerini hızlandırmamızı sağlıyor ve 
+                    fikirlerimizi sanayiye uygulanabilir çözümlerle dönüştürmemize olanak tanıyor.
+                    Doğru kaynaklarla, projeyi her adımda daha profesyonel, uygulanabilir ve ölçeklenebilir hale getirebilir, 
+                    uzun vadede endüstriye gerçek değer sunacak yapıya kavuşturabiliriz.
+                    Sağlanacak her türlü maddi veya malzeme desteği, projemizin teknik kalitesini artırmanın yanı sıra, genç mühendis adaylarının motivasyonuna da katkı sağlayacaktır.
+                </p>
+            </div>
+            
+        </section>
+
+        <!-- İLETİŞİM (FOOTER) -->
+       <section id="iletisim">
+            <h2 class="section-main-title">İLETİŞİM</h2>
+    
+            <div class="footer-layout">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>SOSYAL MEDYA</h4>
+                        <div class="social-icons">
+    
+                            <a href="https://www.instagram.com/neutronaiteam/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+    
+   
+                            <a href="https://www.linkedin.com/company/neutronaiteam" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>MAIL</h4>
+                        <a href="mailto:neutronaiteam@gmail.com" class="mail-link">neutronaiteam@gmail.com</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h4>ADRES</h4>
+                        <p>Karadeniz Teknik Üniversitesi Milli Egemenlik 11 Nolu Sk. 6/2 
+                            <br>
+                            61080 Ortahisar, Trabzon
+                        </p>
+                    </div>
+                </div>
+
+                <div class="qr-side">
+                    <div class="qr-wrapper">
+                        <img src="qr-kod.png" alt="QR" class="qr-image">
+                    </div>
+                    <p class="join-text ">Bize katılmak ister misiniz?</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

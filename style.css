@@ -1,0 +1,437 @@
+/* --- 1. TEMEL AYARLAR --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding-top: 60px;  
+    background-color: #ffffff; 
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- 2. NAVİGASYON --- */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 15px;
+    
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+/* --- 3. ANASAYFA (HERO) --- */
+header {
+    height: calc(100vh - 60px); 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding-top: 3vh; 
+    position: relative;
+    overflow: hidden;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px;
+}
+
+.site-logo {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    filter: drop-shadow(0 8px 12px rgba(0,0,0,0.04)); 
+}
+
+.hero-slogan {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 12px; 
+    text-transform: uppercase;
+    color: #333;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* --- 4. GENEL BÖLÜM (SECTION) AYARLARI --- */
+section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: #ffffff; 
+}
+
+.section-main-title {
+    text-align: center;
+    margin-bottom: 50px; 
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.main-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+/* --- 5. BAŞARILARIMIZ (İKİ SÜTUNLU YAN YANA SEÇENEK) --- */
+.achievements-container {
+    display: flex;
+    align-items: flex-start; /* Ortalamayı KALDIRDIK, öğeler en üstten başlar */
+    justify-content: space-between;
+    gap: 50px; /* Sütunlar arası ferah boşluk */
+    width: 100%;
+}
+
+/* Sol Sütun: Metin Alanı */
+.achievements-text {
+    flex: 1; /* Alanı eşit böler */
+    font-size: 1.05rem;
+    font-weight: 300; /* Girişteki o ince, elit stil */
+    color: #444;
+    text-align: left; /* Yazıyı tamamen SOLA YASLAR */
+    line-height: 1.7;
+    margin-top: 0; /* Üstten kaymayı önlemek için sıfırlandı */
+    border-left: 4px solid #B4AEE8;
+    padding-left: 15px;
+}
+
+/* Sağ Sütun: Slider Alanı (Fotoğraflar) */
+.achievements-slider {
+    flex: 1.2; /* Fotoğraflar metne göre hafifçe daha geniş durur */
+    position: relative;
+    width: 100%;
+    margin-top: 0; /* Üstten kaymayı önlemek için sıfırlandı */
+}
+
+.a-slider-viewport {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.a-slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.a-slider-track img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Slider Butonları ve Noktaları */
+.a-nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border: 1px solid #ddd;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.a-nav-btn:hover {
+    background: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.a-prev { left: 15px; }
+.a-next { right: 15px; }
+
+.a-dots {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 4px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot.active {
+    background-color: #B4AEE8;
+    width: 20px; 
+    border-radius: 10px;
+}
+
+/* --- 6. TAKIMLAR VE ÜYE SLIDER --- */
+.team-info {
+    margin-bottom: 30px;
+    border-left: 4px solid #B4AEE8; 
+    padding-left: 15px;
+}
+
+.member-dept {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #888;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team-block {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.slider-viewport {
+    flex: 1;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.member-card {
+    min-width: 100%;
+    text-align: center;
+}
+
+.photo-container {
+    width: 199px;
+    height: 199px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    border: 3px solid #eee;
+    overflow: hidden;
+}
+
+.photo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav-btn {
+    background: none;
+    border: 1px solid #ddd;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+/* --- 7. İLETİŞİM (FOOTER) - MİNİMAL VE İNCE TEMA --- */
+#iletisim {
+    background-color: #333; 
+    color: #ffffff;
+    padding: 40px 20px;
+    max-width: 100%;
+}
+
+#iletisim .main-title {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.footer-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.contact-info { 
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.contact-item h4 {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    color: #ffffff; 
+    text-transform: uppercase;
+}
+
+.contact-item p, .mail-link {
+    font-size: 0.85rem;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #ffffff;
+    color: #333;
+    transform: translateY(-3px);
+}
+
+.qr-side {
+    flex: 0 0 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-wrapper {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin-bottom: 8px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.join-text {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* --- 8. RESPONSIVE (MOBİL) --- */
+@media (max-width: 768px) {
+    
+    nav ul li { margin: 0 10px; }
+
+    nav ul li a { font-size: 12px; }
+
+    #iletisim { padding: 30px 15px; }
+
+    .achievements-container, 
+    .footer-layout {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .social-icons { justify-content: center; }
+    
+    .nav-btn { width: 35px; height: 35px; }
+}
+
+
+
+.scroll-hint {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.4;
+}
+
+.scroll-hint span {
+    font-size: 9px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.scroll-line {
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(to bottom, #333, transparent);
+    animation: lineFlow 2.5s infinite ease-in-out;
+}
+
+@keyframes lineFlow {
+    0% { transform: scaleY(0); transform-origin: top; opacity: 0; }
+    50% { transform: scaleY(1); transform-origin: top; opacity: 1; }
+    100% { transform: scaleY(0); transform-origin: bottom; opacity: 0; }
+} 

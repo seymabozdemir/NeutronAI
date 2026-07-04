@@ -1,0 +1,107 @@
+{
+    "üyeler":[
+        {
+            "id":1,
+            "name":"Elif Yaren Şakar",
+            "Department":["Arayüz"],
+            "photo":"img/.jpg"
+        },{
+            "id":2,
+            "name":"Bilge Nur Demirel",
+            "Department":["Arayüz","ROS"],
+            "photo":"img/.jpg"
+        },{
+            "id":3,
+            "name":"Şeyma Bozdemir",
+            "Department":"Arayüz",
+            "photo":"img/.jpg"
+        },{
+            "id":4,
+            "name":"Zübeyde Tokşen",
+            "Department":"ROS",
+            "photo":"img/.jpg"
+        },{
+            "id":5,
+            "name":"Betül Yalçın",
+            "Department":"ROS",
+            "photo":"img/.jpg"
+        },{
+            "id":6,
+            "name":"Hasan Şekerci",
+            "Department":"ROS",
+            "photo":"img/.jpg"
+        },{
+            "id":7,
+            "name":"Sefa Ekiz",
+            "Department":"ROS",
+            "photo":"img/.jpg"
+        },{
+            "id":8,
+            "name":"İlay Eylül",
+            "Department":"ELEKTRONİK",
+            "photo":"img/.jpg"
+        },{
+            "id":9,
+            "name":"Kadir Atakan Arslan",
+            "Department":"ELEKTRONİK",
+            "photo":"img/.jpg"
+        },{
+            "id":10,
+            "name":"Sude Naz Bayrak",
+            "Department":"ELEKTRONİK",
+            "photo":"img/.jpg"
+        },{
+            "id":11,
+            "name":"İremnaz Deveci",
+            "Department":"SENSÖR/GÖRÜNTÜ İŞLEME",
+            "photo":"img/.jpg"
+        },{
+            "id":12,
+            "name":"Elifsu Sındırgılı",
+            "Department":"SENSÖR/GÖRÜNTÜ İŞLEME",
+            "photo":"img/.jpg"
+        },{
+            "id":13,
+            "name":"Sinan",
+            "Department":"SENSÖR/GÖRÜNTÜ İŞLEME",
+            "photo":"img/.jpg"
+        },{
+            "id":14,
+            "name":"Yunus Emre Öztolüt",
+            "Department":"MEKANİK",
+            "photo":"img/.jpg"
+        },{
+            "id":15,
+            "name":"Erdem Terzi",
+            "Department":"MEKANİK",
+            "photo":"img/.jpg"
+        }
+    ], "sponsorlar":[
+        {
+            "id":1,
+            "name":"Sponsor1",
+            "katki":"Teknik Destek",
+            "logo":"logo1.png"
+        },{
+            "id":2,
+            "name":"Sponsor2",
+            "katki":"Teknik Destek",
+            "logo":"logo2.png"
+        },{
+            "id":3,
+            "name":"Sponsor3",
+            "katki":"Teknik Destek",
+            "logo":"logo3.png "
+        }
+    ],"takımlar":[
+        {
+            "id":1,
+            "name":"Takım1",
+            "CalismaAlani":"ÇalışmaAlanı1"
+        },{
+            "id":2,
+            "name":"Takım2",
+            "CalismaAlani":"ÇalışmaAlanı2"
+        }
+    ]
+}
